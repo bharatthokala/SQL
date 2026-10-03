@@ -1,24 +1,4 @@
-CREATE DATABASE college;
-USE college;
-CREATE TABLE students(
-	s_id INT,
-    s_name VARCHAR(50),
-    s_age INT,
-    branch VARCHAR(50),
-    cgpa FLOAT
-);
-CREATE TABLE courses(
-	s_name INT,
-    branch VARCHAR(50),
-    c_name VARCHAR(50)
-);
-ALTER TABLE students ADD COLUMN email VARCHAR(50);
-ALTER TABLE students MODIFY COLUMN s_name VARCHAR(100);
-ALTER TABLE students RENAME TO college_students;
-ALTER TABLE college_students DROP COLUMN email;
-DROP TABLE courses;
-SHOW TABLES;
-SELECT * FROM college_students;
+#DML
 INSERT INTO college_students VALUES
 (101,"ABC",18,"CSE",7.5),
 (102,"XYZ",19,"CSE",8.2),
@@ -41,17 +21,17 @@ CREATE TABLE students(
     cgpa FLOAT
 );
 INSERT INTO students VALUES
-(1, 'Ravi', 18, 'M', 'AIML',7.2),
-(2, 'Anil', 20, 'M', 'CSE',7.9),
-(3, 'Priya', 19, 'F', 'AIML',8.9),
-(4, 'Sneha', 19, 'F', 'ECE',7.5),
-(5, 'Kiran', 18, 'M', 'CSE',8.2);
+(1, 'Ravi', 18, 'M', 'AIML', 7.2, 'Bangalore'),
+(2, 'Anil', 20, 'M', 'CSE', 7.9, 'Chennai'),
+(3, 'Priya', 19, 'F', 'AIML', 8.9, 'Bangalore'),
+(4, 'Sneha', 19, 'F', 'ECE', 7.5, 'Hyderabad'),
+(5, 'Kiran', 18, 'M', 'CSE', 8.2, 'Chennai');
 
-INSERT INTO students (id, name, age, gender, branch,cgpa) VALUES
-(6, 'Rahul', 20, 'M', 'AIML',6.5),
-(7, 'Pooja', 19, 'F', 'CSE',7.9),
-(8, 'Arjun', 18, 'M', 'ECE',9.5),
-(9, 'Divya', 20, 'F', 'AIML',9.8),
-(10, 'Vijay', 18, 'M', 'CSE',8.3);
+INSERT INTO students (id, name, age, gender, branch, cgpa, city) VALUES
+(6, 'Rahul', 20, 'M', 'AIML', 6.5, 'Hyderabad'),
+(7, 'Pooja', 19, 'F', 'CSE', 7.9, 'Bangalore'),
+(8, 'Arjun', 18, 'M', 'ECE', 9.5, 'Chennai'),
+(9, 'Divya', 20, 'F', 'AIML', 9.8, 'Hyderabad'),
+(10, 'Vijay', 18, 'M', 'CSE', 8.3, 'Bangalore');
 SELECT * FROM students;
-DELETE FROM students;
+SELECT DISTINCT branch FROM students;
