@@ -1,3 +1,4 @@
+#DDL
 CREATE DATABASE college;
 USE college;
 CREATE TABLE students(
@@ -17,4 +18,5 @@ ALTER TABLE students MODIFY COLUMN s_name VARCHAR(100);
 ALTER TABLE students RENAME TO college_students;
 ALTER TABLE college_students DROP COLUMN email;
 DROP TABLE courses;
-DROP DATABASE college;
+SHOW TABLES;
+SELECT * FROM college_students;
