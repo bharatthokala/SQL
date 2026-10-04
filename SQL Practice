@@ -1,0 +1,359 @@
+1. Database and Table Management DDL
+	Create a database named college_db. 
+	Select the college_db database. 
+	Create a table named students with columns student_id, name, age, branch, and cgpa. 
+	Create a table named courses with suitable data types. 
+	Add an email column to the students table. 
+	Modify the data type of the name column. 
+	Rename the students table to college_students. 
+	Remove the email column from the table. 
+	Delete the courses table. 
+	Delete the college_db database. 
+2. INSERT, SELECT, UPDATE, DELETE DML
+	Insert five student records into the students table. 
+	Insert multiple records using a single INSERT statement. 
+	Display all records from the students table. 
+	Display only the names and branches of students. 
+	Display the names, ages, and CGPAs of students. 
+	Update the CGPA of a particular student. 
+	Change the branch of a student from ECE to AIML. 
+	Increase the CGPA of all AIML students by 0.10. 
+	Delete a student using their student_id. 
+	Delete all students belonging to a particular branch. 
+3. DISTINCT and Aliases
+	Display all unique branches. 
+	Display all unique cities. 
+	Count the number of unique branches. 
+	Display the student name with the alias student_name. 
+	Display CGPA with the alias student_cgpa. 
+	Display student names and branches with meaningful aliases. 
+	Display unique combinations of branch and city. 
+4. WHERE and Comparison Operators
+	Find students whose age is greater than 18. 
+	Find students whose CGPA is less than 7.5. 
+	Find students whose age is exactly 20. 
+	Find students whose CGPA is greater than or equal to 8.5. 
+	Find students whose branch is not CSE. 
+	Find students whose age is not 19. 
+	Find students whose CGPA is between 7.0 and 8.5 using comparison operators. 
+	Find students whose city is Hyderabad. 
+5. Logical Operators
+	Find students from AIML whose CGPA is above 8.5. 
+	Find students from CSE who are younger than 20. 
+	Find students who are from AIML or ECE. 
+	Find students whose CGPA is above 9 or age is below 18. 
+	Find students who are not from CSE and have CGPA above 8. 
+	Find students from Hyderabad who belong to CSE or AIML. 
+	Find students whose age is between 18 and 22 and CGPA is above 8. 
+6. IN, BETWEEN, LIKE, NULL
+	Find students whose branch is either CSE, AIML, or ECE using IN. 
+	Find students whose city is either Hyderabad or Tirupati. 
+	Find students whose age is between 18 and 21. 
+	Find students whose CGPA is between 8.0 and 9.0. 
+	Find students whose names start with A. 
+	Find students whose names end with a. 
+	Find students whose names contain the letter i. 
+	Find students whose names have exactly five characters. 
+	Find students whose second character is a. 
+	Find students whose names start with B and contain r. 
+	Find students whose email is NULL. 
+	Find students whose email is not NULL. 
+	Find students whose branch is not in CSE or ECE. 
+7. ORDER BY and LIMIT
+	Display students ordered by CGPA in ascending order. 
+	Display students ordered by CGPA in descending order. 
+	Display students ordered by age from oldest to youngest. 
+	Display students ordered by branch alphabetically. 
+	Display students ordered by CGPA descending and age ascending. 
+	Find the student with the highest CGPA. 
+	Find the student with the lowest CGPA. 
+	Find the top three students by CGPA. 
+	Find the two youngest students. 
+	Find the five students with the highest CGPA from AIML. 
+8. Aggregate Functions
+	Count the total number of students. 
+	Find the total of all students' CGPAs. 
+	Find the average CGPA. 
+	Find the highest CGPA. 
+	Find the lowest CGPA. 
+	Find the total number of students in AIML. 
+	Find the average age of students. 
+	Find the total salary of all employees. 
+	Find the average salary of employees in IT. 
+	Find the difference between the highest and lowest salary. 
+9. GROUP BY and HAVING
+	Count students in each branch. 
+	Find the average CGPA of each branch. 
+	Find the highest CGPA in each branch. 
+	Find the lowest CGPA in each branch. 
+	Display branches having more than three students. 
+	Display branches whose average CGPA is above 8.5. 
+	Count students in each city. 
+	Find the average age of students in each branch. 
+	Find the total salary of each department. 
+	Display departments whose total salary exceeds ₹2,00,000. 
+	Group students by branch and city. 
+	Find the highest average CGPA among branches. 
+	Find the branch with the greatest number of students. 
+10. String Functions
+	Display all student names in uppercase. 
+	Display all student names in lowercase. 
+	Find the length of every student name. 
+	Remove leading and trailing spaces from student names. 
+	Concatenate student names and branches. 
+	Display the first three characters of each student name. 
+	Display the last two characters of each student name. 
+	Replace a specific branch name with another value in the output. 
+	Find students whose names contain exactly six characters. 
+	Reverse each student name. 
+	Count the number of characters in each department name. 
+	Extract a substring from each student's name. 
+11. Numeric Functions
+	Round each student's CGPA to one decimal place. 
+	Round employee salaries to the nearest thousand. 
+	Find the ceiling of each student's CGPA. 
+	Find the floor of each student's CGPA. 
+	Calculate the absolute difference between two numeric columns. 
+	Find the remainder when student IDs are divided by 2. 
+	Calculate the square of each student's age. 
+	Calculate the square root of a numeric value. 
+	Generate a random number for each record. 
+	Round average salary to two decimal places. 
+12. Date and Time Functions
+Use an employees table containing joining_date and birth_date.
+	Display the current date. 
+	Display the current date and time. 
+	Extract the year from each employee's joining date. 
+	Extract the month from each joining date. 
+	Extract the day from each joining date. 
+	Find employees who joined in 2024. 
+	Find employees who joined in January. 
+	Calculate each employee's years of service. 
+	Find employees who joined more than two years ago. 
+	Add 30 days to each joining date. 
+	Find the difference between two dates. 
+	Display the day of the week for each joining date. 
+	Group employees by joining year. 
+	Find the earliest joining date. 
+	Find the latest joining date. 
+13. CASE Statements
+	Categorize students as Excellent, Good, or Needs Improvement based on CGPA. 
+	Categorize employees as High, Medium, or Low salary. 
+	Display whether each student is eligible for a scholarship based on CGPA. 
+	Categorize employees by age group. 
+	Display a custom message based on each employee's department. 
+	Count how many students belong to each CGPA category. 
+	Calculate a bonus using different salary ranges. 
+	Replace department names with custom labels using CASE. 
+	Display pass/fail status based on marks. 
+	Create a performance category using multiple conditions. 
+14. Constraints
+Use a new table named employees.
+	Create an employee table with a primary key. 
+	Create a table with a NOT NULL constraint. 
+	Create a table with a UNIQUE email column. 
+	Add a default value to a column. 
+	Add a CHECK constraint for age. 
+	Add a primary key after table creation. 
+	Add a foreign key referencing a department table. 
+	Remove a constraint from a table. 
+	Insert records and test each constraint. 
+	Attempt to insert duplicate primary keys and observe the result. 
+15. Joins
+Use these tables:
+	employees(employee_id, name, department_id, salary, manager_id) 
+	departments(department_id, department_name) 
+	Display employees with their department names using INNER JOIN. 
+	Display all employees, including those without a matching department. 
+	Display all departments, including those without employees. 
+	Find employees who do not belong to any department. 
+	Find departments that have no employees. 
+	Display employee names and their managers using a self join. 
+	Display employees and department names using a LEFT JOIN. 
+	Join three tables: employees, departments, and projects. 
+	Find employees working on a specific project. 
+	Find employees whose salary is above their department's average salary. 
+	Find the number of employees in each department using a join. 
+	Display employees and their manager's department. 
+	Perform a cross join between departments and job roles. 
+	Find pairs of employees working in the same department. 
+	Join tables using multiple conditions. 
+16. Aggregate Queries with Joins
+	Find the total salary of each department. 
+	Find the average salary of each department. 
+	Find the highest-paid employee in every department. 
+	Count employees in every department. 
+	Find departments with an average salary above ₹60,000. 
+	Find the department with the highest total salary. 
+	Find the number of projects assigned to each employee. 
+	Find departments with more than five employees. 
+	Find the average salary of employees reporting to each manager. 
+	Find the department with the lowest average salary. 
+17. Subqueries
+	Find employees earning more than the average salary. 
+	Find students with CGPA above the average CGPA. 
+	Find the employee with the highest salary. 
+	Find employees earning the second-highest salary. 
+	Find employees working in the same department as a particular employee. 
+	Find employees whose salary is greater than every employee in HR. 
+	Find employees whose salary is greater than at least one employee in HR. 
+	Find departments whose average salary is above the company average. 
+	Find students whose CGPA is higher than the CGPA of a specific student. 
+	Find employees who earn more than their department's average salary using a correlated subquery. 
+	Find departments with at least one employee earning above ₹1,00,000. 
+	Find employees who have never received a bonus using NOT EXISTS. 
+	Find customers who have placed at least one order using EXISTS. 
+	Find customers who have never placed an order. 
+	Find the third-highest salary using a subquery. 
+18. Set Operations
+Use two tables: students_2025 and students_2026.
+	Combine the records of both tables using UNION. 
+	Combine the records of both tables using UNION ALL. 
+	Find students appearing in both tables. 
+	Find students appearing only in the first table. 
+	Find students appearing only in the second table. 
+	Compare the branches present in two tables. 
+	Find common employee IDs across two departments' tables. 
+	Combine two result sets and sort the final output. 
+	Remove duplicate records from two result sets. 
+	Compare two datasets to find missing records. 
+Note: MySQL does not natively support INTERSECT and EXCEPT in older versions; practice their equivalents using joins or subqueries.
+19. CTEs — Common Table Expressions
+	Create a CTE to display employees earning above ₹50,000. 
+	Create a CTE to calculate average salary by department. 
+	Use a CTE to find the highest-paid employee in each department. 
+	Use two CTEs to compare employee salaries with department averages. 
+	Use a CTE to find students with above-average CGPA. 
+	Use a CTE to calculate monthly sales totals. 
+	Use multiple CTEs to analyze customer orders. 
+	Use a CTE to find the second-highest salary. 
+	Use a CTE to calculate department-wise employee counts. 
+	Use a recursive CTE to generate numbers from 1 to 10. 
+	Use a recursive CTE to display an employee-manager hierarchy. 
+20. Views
+	Create a view containing employee names and salaries. 
+	Create a view of all AIML students. 
+	Create a view showing department-wise average salaries. 
+	Query data from a view. 
+	Update data through an updatable view. 
+	Rename or replace a view. 
+	Drop a view. 
+	Create a view showing top-performing students. 
+	Create a view for employees eligible for a bonus. 
+21. Window Functions
+Use an employees table with department and salary columns.
+	Display each employee's salary and the average company salary. 
+	Rank all employees by salary. 
+	Rank employees within each department. 
+	Use ROW_NUMBER() to number employees. 
+	Compare RANK() and DENSE_RANK() on salaries. 
+	Find the second-highest salary in each department. 
+	Find the top three salaries in each department. 
+	Calculate a running total of salaries. 
+	Calculate a running average of salaries. 
+	Use LAG() to compare an employee's salary with the previous salary. 
+	Use LEAD() to display the next employee's salary. 
+	Find the difference between consecutive salaries. 
+	Find the highest-paid employee in each department using ROW_NUMBER(). 
+	Calculate the percentage contribution of each employee's salary to the department total. 
+	Divide employees into four salary groups using NTILE(4). 
+	Find employees whose salary is higher than the previous employee's salary. 
+	Calculate cumulative sales by month. 
+	Find the top-selling product in each category. 
+	Calculate a three-month moving average of sales. 
+	Find the first and last order of each customer. 
+22. Transactions
+	Start a transaction and insert a new employee. 
+	Roll back an inserted employee. 
+	Commit an employee insertion. 
+	Update multiple employee salaries inside a transaction. 
+	Roll back an incorrect salary update. 
+	Delete a record inside a transaction and restore it using rollback. 
+	Use SAVEPOINT before an update. 
+	Roll back to a savepoint. 
+	Commit the remaining transaction changes. 
+	Explain what happens when a transaction is committed. 
+23. Indexes
+	Create an index on the employee name. 
+	Create an index on department and salary. 
+	Create a unique index on email. 
+	Display the indexes of a table. 
+	Use EXPLAIN to inspect a query. 
+	Compare a query before and after adding an index. 
+	Drop an index. 
+	Create a composite index and test queries using its columns. 
+	Identify a column that may benefit from indexing. 
+	Explain why indexing every column is not always beneficial. 
+24. Normalization and Database Design
+	Identify repeating groups in an unnormalized student table. 
+	Convert an unnormalized table into 1NF. 
+	Convert a table into 2NF. 
+	Convert a table into 3NF. 
+	Design a normalized college database. 
+	Identify partial dependencies. 
+	Identify transitive dependencies. 
+	Design tables for students, courses, and enrollments. 
+	Design an e-commerce database. 
+	Identify primary and foreign keys in a relational design. 
+25. Real-World SQL Practice
+Employee Analytics
+	Find the highest-paid employee in each department. 
+	Find the second-highest salary in the company. 
+	Find employees who earn more than their managers. 
+	Find employees who joined in the last 12 months. 
+	Find departments with no employees. 
+	Find employees sharing the same salary. 
+	Find the average salary by joining year. 
+	Find the top three earners in each department. 
+	Find employees who have received more than two bonuses. 
+	Find the longest-serving employee in each department. 
+E-commerce
+	Find customers who have never placed an order. 
+	Find the top five customers by total spending. 
+	Find the most frequently ordered product. 
+	Find monthly revenue. 
+	Find the average order value. 
+	Find customers who placed more than five orders. 
+	Find products that have never been ordered. 
+	Find the best-selling product in each category. 
+	Find the percentage of cancelled orders. 
+	Find repeat customers. 
+	Find each customer's first order date. 
+	Find each customer's most recent order. 
+	Find customers whose total spending exceeds the average customer spending. 
+	Find monthly revenue growth. 
+	Find the three highest-revenue products per category. 
+Student Analytics
+	Find the average CGPA by branch. 
+	Find the highest CGPA in each branch. 
+	Find students above the overall average CGPA. 
+	Find the top three students in each branch. 
+	Find students who have not enrolled in any course. 
+	Find the number of students in each city. 
+	Find the percentage of students in each branch. 
+	Find students whose CGPA improved between two semesters. 
+	Find the course with the highest average marks. 
+	Find students who failed in more than two subjects. 
+26. Advanced Interview Challenges
+	Find the second-highest salary without using LIMIT. 
+	Find the Nth-highest salary. 
+	Find duplicate employee records. 
+	Delete duplicate records while retaining one record. 
+	Find consecutive days on which a customer placed orders. 
+	Find the longest consecutive login streak for each user. 
+	Find missing dates in a sales dataset. 
+	Find gaps in employee IDs. 
+	Find the median salary. 
+	Find the mode of a column. 
+	Find employees who joined before their managers. 
+	Find customers who purchased every product in a category. 
+	Find the maximum number of consecutive days of sales. 
+	Find the first transaction of every month. 
+	Find the top 10% of employees by salary. 
+	Find departments whose salary distribution exceeds the company average. 
+	Find users who logged in on three consecutive days. 
+	Find products whose sales increased for three consecutive months. 
+	Find the percentage change in monthly revenue. 
+	Find the highest-grossing product each month. 
+
+
